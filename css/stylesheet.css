@@ -1,0 +1,35 @@
+.jumbotron {
+    background-color: #024BB1;
+    color: #F4EAE3;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+.jumbotron h3{
+    font-size: 1.3rem;
+    margin-top: 0rem;
+    font-style: italic;
+    margin-bottom: 0;
+    }
+@media screen and (min-width: 768px) {
+    .jumbotron h1{
+        font-size: 3rem;
+        }
+    .jumbotron h3{
+        font-size: 2rem;
+        margin-top: 0.8rem;
+        font-style: italic;
+        margin-bottom: 0;
+        }
+}
+@media screen and (min-width: 1200px) {
+    .jumbotron h1{
+        font-size: 5rem;
+        }
+    .jumbotron h3{
+        font-size: 3.5rem;
+        margin-top: 0.8rem;
+        font-style: italic;
+        margin-bottom: 0;
+        }
+}
