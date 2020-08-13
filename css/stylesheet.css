@@ -1,35 +1,70 @@
+h3, .caption {
+    font-family: 'Tangerine', cursive;
+}
+body, .navbar {
+    font-family: 'Lato', sans-serif;
+}
+
 .jumbotron {
     background-color: #024BB1;
     color: #F4EAE3;
     margin: auto;
-    padding: auto;
+    padding: 0;
     text-align: center;
 }
 .jumbotron h3{
-    font-size: 1.3rem;
+    font-size: 2rem;
     margin-top: 0rem;
     font-style: italic;
     margin-bottom: 0;
     }
+
 @media screen and (min-width: 768px) {
-    .jumbotron h1{
+    .jumbotron h1, .navbar {
         font-size: 3rem;
         }
     .jumbotron h3{
-        font-size: 2rem;
+        font-size: 3rem;
         margin-top: 0.8rem;
         font-style: italic;
         margin-bottom: 0;
         }
 }
 @media screen and (min-width: 1200px) {
-    .jumbotron h1{
-        font-size: 5rem;
+    .jumbotron h1 {
+        font-size: 4rem;
         }
     .jumbotron h3{
-        font-size: 3.5rem;
+        font-size: 4rem;
         margin-top: 0.8rem;
         font-style: italic;
         margin-bottom: 0;
         }
+    }
+.navbar {
+    background-color: #ce008e;
+    font-size: 1rem;
+    display: inline-;
+}
+#contentHome h1 {
+    background-color: yellow;
+}
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    width: 300px;
+}
+img {
+    margin-top: 50px;
+    margin-bottom: 0;
+    width: 200px;
+    height: 200px;
+}
+.caption {
+    display: block;
+    width: 300px;
+    background-color: rgba(0,0,0,0);
+    color: #ffed66;
 }

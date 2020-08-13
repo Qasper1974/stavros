@@ -9,10 +9,21 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/stylesheet.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Tangerine:wght@700&display=swap" rel="stylesheet">
     <title>STAVROS</title>
 </head>
 
 <body>
+    <style>
+        body { 
+    background-image: url("img/Santorini.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    }
+    </style>
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
@@ -21,27 +32,94 @@
                     <h1 class="d-inline-block"><span class="d-none d-sm-block ml-3">- Σ Τ Α Υ Ρ Ο Σ </span></h1>
                     <h3>Authentic Greek Cuisine & More</h3>
                 </div>
-            <div class="row">
-                <div class="col12">
-                    
-                </div>
-            </div>
-
             </div>
         </div>
     </header>
 
-    <div>
-        <h1>Hallo</h1>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarStavros"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarStavros">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item d-inline-block active">
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item d-inline-block">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item d-inline-block">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Appetizers</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Main Courses</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Deserts</a>
+                    </div>
+                </li>
+                <li class="nav-item d-inline-block">
+                    <a class="nav-link" href="#">Events</a>
+                </li>
+                <li class="nav-item d-inline-block">
+                    <a class="nav-link" href="#">Language Classes</a>
+                </li>
+                <li class="nav-item d-inline-block">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>                
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 col-md-4">
+                <div class="item">
+                    <img src="https://via.placeholder.com/250"/>
+                    <h2><span class="caption mt-2">About us</span></h2>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="item">
+                    <img src="https://via.placeholder.com/250"/>
+                    <h2><span class="caption mt-2">Menu</span></h2>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="item">
+                    <img src="https://via.placeholder.com/250"/>
+                    <h2><span class="caption mt-2">Events</span></h2>
+                </div>
+            </div>
+        <div class="row mt-5">
+            <div class="col-12 col-md-6">
+                <div class="item" style="margin-left: 150px;">
+                    <img src="https://via.placeholder.com/250"/>
+                    <h2><span class="caption mt-2">Language Classes</span></h2>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="item"style="margin-left: 150px;">
+                    <img src="https://via.placeholder.com/250"/>
+                    <h2><span class="caption mt-2">Contact</span></h2>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 
 
     <div>
-        <h2>Start1</h2>
+        <h2></h2>
     </div>
 
     <footer>
-        <p>Footer text</p>
+        <p></p>
     </footer>
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
