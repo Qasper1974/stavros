@@ -44,27 +44,26 @@ body, .navbar {
 .navbar {
     background-color: #ce008e;
     font-size: 1rem;
-    display: inline-;
-}
-#contentHome h1 {
-    background-color: yellow;
+    
 }
 div.item {
     vertical-align: top;
     display: inline-block;
     text-align: center;
-    background-color: rgba(0,0,0,0.5);
-    width: 300px;
+    background-color: rgba(0,0,0,0.7);
+    width: 400px;
 }
 img {
     margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 0;
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 280px;
 }
 .caption {
     display: block;
-    width: 300px;
+    width: 400px;
     background-color: rgba(0,0,0,0);
     color: #ffed66;
 }
