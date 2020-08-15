@@ -8,7 +8,7 @@ body, .navbar {
 .jumbotron {
     background-color: #024BB1;
     color: #F4EAE3;
-    margin: auto;
+    margin: 0;
     padding: 0;
     text-align: center;
 }
@@ -18,8 +18,34 @@ body, .navbar {
     font-style: italic;
     margin-bottom: 0;
     }
+@media screen and (min-width: 50px) {
 
-@media screen and (min-width: 768px) {
+    #imghome {
+        width: 180px;
+        height: 180px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        }
+    .caption {
+        display: block;
+        width: 200px;
+        background-color: rgba(0,0,0,0);
+        color: #ffed66;
+        }
+    div.item {
+        vertical-align: top;
+        text-align: center;
+        background-color: rgba(0,0,0,0.7);
+        width: 200px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        align-self: center;
+        }
+        
+}
+
+@media screen and (min-width: 767px) {
     .jumbotron h1, .navbar {
         font-size: 3rem;
         }
@@ -28,8 +54,33 @@ body, .navbar {
         margin-top: 0.8rem;
         font-style: italic;
         margin-bottom: 0;
+        } 
+    #imghome {
+        width: 180px;
+        height: 180px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
         }
-}
+    .caption {
+        display: block;
+        width: 200px;
+        background-color: rgba(0,0,0,0);
+        color: #ffed66;
+        }
+    div.item {
+        vertical-align: top;
+        text-align: center;
+        background-color: rgba(0,0,0,0.7);
+        width: 200px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        }
+        .navbar {
+            font-size: 1.5rem;
+        }
+    }
+
 @media screen and (min-width: 1200px) {
     .jumbotron h1 {
         font-size: 4rem;
@@ -40,30 +91,45 @@ body, .navbar {
         font-style: italic;
         margin-bottom: 0;
         }
+    #imghome {
+        width: 380px;
+        height: 380px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        }
+    .caption {
+        display: block;
+        width: 400px;
+        background-color: rgba(0,0,0,0);
+        color: #ffed66;
+        }
+    div.item {
+        vertical-align: top;
+        text-align: center;
+        background-color: rgba(0,0,0,0.7);
+        width: 400px;
+        margin-top: 200px;
+        }
+    footer {
+        font-size: 1rem;
+        }
+    .nav-link {
+        font-size: 1.5rem;
+        }
     }
+        
 .navbar {
     background-color: #ce008e;
     font-size: 1rem;
     
 }
-div.item {
-    vertical-align: top;
-    display: inline-block;
+footer {
+    background-color: #ffed66;
+    opacity: 0.8;
     text-align: center;
-    background-color: rgba(0,0,0,0.7);
-    width: 400px;
-}
-img {
-    margin-top: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 0;
-    width: 280px;
-    height: 280px;
-}
-.caption {
-    display: block;
-    width: 400px;
-    background-color: rgba(0,0,0,0);
-    color: #ffed66;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-shadow: 0 10vh 0 10vh #000;
 }

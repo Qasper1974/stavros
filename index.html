@@ -16,13 +16,33 @@
 
 <body>
     <style>
-        body { 
-    background-image: url("img/Santorini.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    }
+        body {
+            background-image: url("img/Santorini_phone.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background-position: center;
+        }
+
+        @media screen and (min-width: 767px) {
+            body {
+                background-image: url("img/Santorini.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+                background-position: center;
+            }
+        }
+
+        @media screen and (min-width: 1100px) {
+            body {
+                background-image: url("img/Santorini.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+                background-position: center;
+            }
+        }
     </style>
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -71,76 +91,83 @@
                 </li>
                 <li class="nav-item d-inline-block">
                     <a class="nav-link" href="#">Contact</a>
-                </li>                
+                </li>
             </ul>
         </div>
     </nav>
 
-    <div>
-        <h1 class="mt-5"></h1>
-    </div>
-    <div class="d-flex flex-row justify-content-around">
+
+    <div class="d-flex flex-column flex-sm-row justify-content-around justify-sm-center">
         <div class="item">
-            <a href="/about.html"><img src="img/About.jpeg" / ></a>
-            <h2  href="/about.html"><span class="caption mt-2">About us</span></h2>
+            <a href="/about.html"><img class="d-block" src="img/About.jpeg" id="imghome" />
+                <h2><span class="caption">About us</span></h2>
+            </a>
         </div>
         <div class="item">
-            <div id="carouselMenu" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner" style="max-width:280px; max-height:auto; margin-left: 55px;">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/tzatziki.jpg" alt="First slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="img/dolmades.jpg" alt="Second slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="img/keftedes.jpg" alt="Third slide">
-                  </div>
+            <a href="/menu.html">
+                <div id="carouselMenu" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block" src="img/tzatziki.jpg" alt="First slide" id="imghome">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block" src="img/dolmades.jpg" alt="Second slide" id="imghome">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block" src="img/keftedes.jpg" alt="Third slide" id="imghome">
+                        </div>
+                    </div>
                 </div>
-              </div>
-            <h2><span class="caption mt-2">Menu</span></h2>
+                <h2><span class="caption">Menu</span></h2>
+            </a>
         </div>
         <div class="item">
-            <div id="carouselEvents" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner" style="max-width:280px; max-height:auto; margin-left: 55px;">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/anna.jpg" alt="First slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="img/buz.jpg" alt="Second slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="img/dance.jpg" alt="Third slide">
-                  </div>
+            <a href="/events.html">
+                <div id="carouselEvents" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block" src="img/anna.jpg" alt="First slide" id="imghome">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block" src="img/buz.jpg" alt="Second slide" id="imghome">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block" src="img/dance.jpg" alt="Third slide" id="imghome">
+                        </div>
+                    </div>
                 </div>
-              </div>
-            <h2><span class="caption mt-2">Events</span></h2>
+                <h2><span class="caption">Events</span></h2>
+            </a>
         </div>
     </div>
-    <div>
-        <h1 class="mt-5"></h1>
-    </div>
-    <div class="d-flex flex-row justify-content-around">
+
+    <div class="d-flex flex-column flex-sm-row justify-content-around">
         <div class="item">
-            <img src="img/alphabet.png"/>
-            <h2><span class="caption mt-2">Language Classes</span></h2>
+            <a href="/classes.html">
+                <img class="d-block" src="img/alphabet.png" id="imghome" />
+                <h2><span class="caption">Language Classes</span></h2>
+            </a>
         </div>
         <div class="item">
-            <img src="img/contact.png"/>
-            <h2><span class="caption mt-2">Contact</span></h2>
+            <a href="/contact.html">
+                <img class="d-block" src="img/contact.png" id="imghome" />
+                <h2><span class="caption">Contact</span></h2>
+            </a>
         </div>
     </div>
 
 
-      
-               
+
+
 
     <div>
         <h2></h2>
     </div>
 
     <footer>
-        <p></p>
+        <p>STAVROS</p>
+        <p>123 Oak Street, Woodland Hills, CA-91364 <br> <a href="tel:123-456-7890">+1 (123) 456 7890</a>
+            <br><a href="mailto:stavros@stavros.com">email us</a></p>
     </footer>
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
