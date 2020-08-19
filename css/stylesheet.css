@@ -20,13 +20,20 @@ body, .navbar, .media-body h3 {
     }
 @media screen and (min-width: 50px) {
 
+    #imgabout {
+        max-width: 300px;
+        max-height: 300px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        }
+
     #imghome {
         width: 180px;
         height: 180px;
         margin-top: 10px;
         margin-left: 10px;
         margin-right: 10px;
-        }
+        } 
     .caption {
         display: block;
         width: 200px;
@@ -46,6 +53,7 @@ body, .navbar, .media-body h3 {
 }
 
 @media screen and (min-width: 767px) {
+
     .jumbotron h1, .navbar {
         font-size: 3rem;
         }
@@ -55,6 +63,7 @@ body, .navbar, .media-body h3 {
         font-style: italic;
         margin-bottom: 0;
         } 
+        
     #imghome {
         width: 180px;
         height: 180px;
@@ -79,9 +88,14 @@ body, .navbar, .media-body h3 {
         .navbar {
             font-size: 1.5rem;
         }
+        .media img {
+            max-width: 100%;
+            height: auto;
+        }
     }
 
 @media screen and (min-width: 1200px) {
+
     .jumbotron h1 {
         font-size: 4rem;
         }
@@ -133,17 +147,32 @@ footer {
     padding-bottom: 0px;
     box-shadow: 0 10vh 0 10vh #000;
 }
-.media {
+
+.d-flex img {
+    max-width:100%;
+    height: auto;
+}
+.d-flex {
+    align-items: center;
+}
+#container1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: rgba(0,0,0,0.7);
-    color: wheat;
-    font-size: 2rem;
-    padding-left: 50px;
-    margin: 50px;
+    color: #f4eae3;
+    padding-top: 5%;
+    padding-bottom: 10%;
 }
-.media-body {
-    max-width: 1100px;
-    padding-top: 50px;;
+.col-12 h3 {
+    margin-top: 2%;
+
 }
-.media-body #mediaheader {
-    padding-top: 50px;
+.col-12 p {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+
 }
