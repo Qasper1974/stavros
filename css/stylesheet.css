@@ -1,4 +1,4 @@
-h3, .caption, .media-body p {
+h3, .caption {
     font-family: 'Tangerine', cursive;
 }
 body, .navbar, .media-body h3 {
@@ -12,13 +12,48 @@ body, .navbar, .media-body h3 {
     padding: 0;
     text-align: center;
 }
-.jumbotron h3{
+.jumbotron h3 {
     font-size: 2rem;
     margin-top: 0rem;
     font-style: italic;
     margin-bottom: 0;
     }
 @media screen and (min-width: 50px) {
+
+    #price {
+    margin-left: 1rem;
+    font-family: 'Tangerine', cursive;
+    font-size: 1.5rem;
+    }
+    #course {
+    margin-left: 1rem;
+    font-family: 'Tangerine', cursive;
+    font-size: 2rem;
+    } 
+
+    .media-heading {
+    margin-left: 1rem;
+    font-family: 'Tangerine', cursive;
+    font-size: 2rem;
+    }
+    #txtmenu {
+    font-family: 'Lato', sans-serif; 
+    margin-left: 1rem;
+    }
+    #menu {
+    width: 130px;
+    height: 130px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    } 
+    #imgmenu {
+        width: 180px;
+        height: 180px;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-right: 10px;
+        } 
 
     #imgabout {
         max-width: 300px;
@@ -54,6 +89,41 @@ body, .navbar, .media-body h3 {
 
 @media screen and (min-width: 767px) {
 
+    #price {
+        margin-left: 1rem;
+        font-family: 'Tangerine', cursive;
+        font-size: 2rem;
+        }
+    #course {
+        margin-left: 1rem;
+        font-family: 'Tangerine', cursive;
+        font-size: 5rem;
+        } 
+    
+    .media-heading {
+        margin-left: 1rem;
+        font-family: 'Tangerine', cursive;
+        font-size: 3rem;
+        }
+    #txtmenu {
+        font-family: 'Lato', sans-serif; 
+        margin-left: 1rem;
+        font-size: 1rem;
+        }
+    #menu {
+        width: 130px;
+        height: 130px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        } 
+    #imgmenu {
+            width: 300px;
+            height: 300px;
+            margin-top: 10px;
+            margin-left: 30px;
+            margin-right: 10px;
+            } 
     .jumbotron h1, .navbar {
         font-size: 3rem;
         }
@@ -96,6 +166,41 @@ body, .navbar, .media-body h3 {
 
 @media screen and (min-width: 1200px) {
 
+    #price {
+        margin-left: 1rem;
+        font-family: 'Tangerine', cursive;
+        font-size: 2.5rem;
+        }
+    #course {
+        margin-left: 1rem;
+        font-family: 'Tangerine', cursive;
+        font-size: 5rem;
+        } 
+    
+    .media-heading {
+        margin-left: 1rem;
+        font-family: 'Tangerine', cursive;
+        font-size: 4rem;
+        }
+    #txtmenu {
+        font-family: 'Lato', sans-serif; 
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        }
+    #menu {
+        width: 130px;
+        height: 130px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        } 
+    #imgmenu {
+            width: 400px;
+            height: 400px;
+            margin-top: 10px;
+            margin-left: 30px;
+            margin-right: 10px;
+            } 
     .jumbotron h1 {
         font-size: 4rem;
         }
@@ -151,6 +256,7 @@ footer {
 .d-flex img {
     max-width:100%;
     height: auto;
+    
 }
 .d-flex {
     align-items: center;
