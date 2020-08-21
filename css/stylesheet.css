@@ -20,7 +20,8 @@ body, .navbar, .media-body h3 {
     }
 @media screen and (min-width: 50px) {
 
-    #price {
+
+    #price, .card-header a {
     margin-left: 1rem;
     font-family: 'Tangerine', cursive;
     font-size: 1.5rem;
@@ -36,7 +37,7 @@ body, .navbar, .media-body h3 {
     font-family: 'Tangerine', cursive;
     font-size: 2rem;
     }
-    #txtmenu {
+    #txtmenu, .card-body {
     font-family: 'Lato', sans-serif; 
     margin-left: 1rem;
     }
@@ -89,7 +90,7 @@ body, .navbar, .media-body h3 {
 
 @media screen and (min-width: 767px) {
 
-    #price {
+    #price, .card-header a {
         margin-left: 1rem;
         font-family: 'Tangerine', cursive;
         font-size: 2rem;
@@ -105,8 +106,8 @@ body, .navbar, .media-body h3 {
         font-family: 'Tangerine', cursive;
         font-size: 3rem;
         }
-    #txtmenu {
-        font-family: 'Lato', sans-serif; 
+        #txtmenu, .card-body {
+            font-family: 'Lato', sans-serif; 
         margin-left: 1rem;
         font-size: 1rem;
         }
@@ -155,10 +156,10 @@ body, .navbar, .media-body h3 {
         margin-top: 80px;
         margin-bottom: 80px;
         }
-        .navbar {
+    .navbar {
             font-size: 1.5rem;
         }
-        .media img {
+    .media img {
             max-width: 100%;
             height: auto;
         }
@@ -166,7 +167,7 @@ body, .navbar, .media-body h3 {
 
 @media screen and (min-width: 1200px) {
 
-    #price {
+    #price, .card-header a {
         margin-left: 1rem;
         font-family: 'Tangerine', cursive;
         font-size: 2.5rem;
@@ -182,8 +183,8 @@ body, .navbar, .media-body h3 {
         font-family: 'Tangerine', cursive;
         font-size: 4rem;
         }
-    #txtmenu {
-        font-family: 'Lato', sans-serif; 
+    #txtmenu, .card-body {
+            font-family: 'Lato', sans-serif; 
         margin-left: 1rem;
         font-size: 1.5rem;
         }
@@ -280,5 +281,143 @@ footer {
     margin-left: 5%;
     margin-bottom: 5%;
     margin-right: 5%;
+}
+.accordion, .card {
+    background-color: rgba(0,0,0,0.4);
+    color: #f4eae3;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.card-header {
+    color: #f4eae3;
+    background-color: #ce008e;
 
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ce008e' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+       }
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ce008e' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  }
+
+  .pricingTable{
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 30px 30px 70px;
+    margin-bottom: 10%;
+    margin-top: 18%;
+    border-radius: 30px;
+    box-shadow: 0 0 15px -8px rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.pricingTable:after{
+    background-color: #FE5F85;
+    height: 300px;
+    width: 300px;
+    top: auto;
+    bottom: -210px;
+    right: auto;
+    left: -160px;
+}
+.pricingTable .title{
+    color: #ffed66;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+.pricingTable .title:before{
+    content: "";
+    background-color: #1A2A3A;
+    width: 65px;
+    height: 3px;
+    margin: 0 auto 20px;
+    display: block;
+    clear: both;
+}
+.pricingTable .price-value{
+    color: #fff;
+    background-color: #ce008e;
+    width: 160px;
+    height: 160px;
+    padding: 57px 0 0;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+}
+.pricingTable .price-value .currency{
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 35px;
+    vertical-align: top;
+    display: inline-block;
+}
+.pricingTable .price-value .amount{
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 45px;
+    display: inline-block;
+}
+.pricingTable .price-value .duration{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0 0 0 -5px;
+    display: inline-block;
+}
+.pricingTable .pricing-content{
+    padding: 0;
+    margin: 0 0 25px;
+    list-style: none;
+    display: inline-block;
+}
+.pricingTable .pricing-content li{
+    color: #f4eae3;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    padding: 0 0 0 35px;
+    margin: 0 0 20px;
+    position: relative;
+}
+.pricingTable .pricing-content li:last-child{ margin: 0; }
+.pricingTable .pricing-content li:before{
+    content: "\f00c";
+    color: #fff;
+    background-color: #ce008e;
+    font-size: 13px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 0;
+}
+.pricingTable .pricingTable-signup a{
+    color: #fff;
+    background-color: #ce008e;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 140px;
+    padding: 3px 10px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+.pricingTable .pricingTable-signup a:hover{
+    color: #F4EAE3;
+    background-color: transparent;
+    border-color: #ce008e;
+}
+
+@media only screen and (max-width: 990px){
+    .pricingTable{ margin-bottom: 30px; }
 }
