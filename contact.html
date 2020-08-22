@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <title>STAVROS</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url("img/Santorini_phone.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background-position: center;
+        }
+
+        @media screen and (min-width: 767px) {
+            body {
+                background-image: url("img/Santorini.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+                background-position: center;
+            }
+        }
+
+        @media screen and (min-width: 1100px) {
+            body {
+                background-image: url("img/Santorini.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+                background-position: center;
+            }
+        }
+    </style>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="d-inline-block">S T A V R O S </h1>
+                    <h1 class="d-inline-block"><span class="d-none d-sm-block ml-3">- Σ Τ Α Υ Ρ Ο Σ </span></h1>
+                    <h3>Authentic Greek Cuisine & More</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarStavros"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarStavros">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item d-inline-block">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item d-inline-block">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item d-inline-block">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/menu.html#sta">Starters</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/menu.html#mai">Main Courses</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/menu.html#des">Deserts</a>
+                    </div>
+                </li>
+                <li class="nav-item d-inline-block">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item d-inline-block">
+                    <a class="nav-link" href="classes.html">Language Classes</a>
+                </li>
+                <li class="nav-item d-inline-block active">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p id="course" class="mx-auto d-block"
+                    style="text-align:center; color:#ffed66; background-color: rgba(0,0,0,0.5); max-width: 30%;">
+                    Contact</p>
+            </div>
+            <div class="col">
+                <img class="mx-auto d-block" src="img/divid.svg"
+                    style="background-color: rgba(0,0,0,0); max-width: 30%;" alt="divider">
+            </div>
+        </div>
+    </div>
+
+    <div id="map">
+        <p id="address">Questions?</p>
+        <p id="addresstxt"><button class="btn btn-lg" role="button"
+            data-toggle="modal" data-target="#modal" style="color:#ffed66; background-color:#ce008e;">Send us an email!</button></p>
+
+        <p id="address"><br>Our Phone Number</p>
+        <p id="addresstxt"><a href="tel:123-456-7890">+1 (123) 456 7890</a></p>
+
+        <p id="address"><br>Our Address</p>
+        <p id="addresstxt">123 Oak Street <br>Woodland Hills <br>CA-91364</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13205.595824489654!2d-118.61541591208496!3d34.161716164488446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1snl!2sus!4v1598048771910!5m2!1snl!2sus" 
+         frameborder="30" style="border:30px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+
+    <div class="form-bg modal fade" id="modal" role="dialog" style="padding-top: 10%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-container">
+                        <form class="form-horizontal">
+                            <button id="closebtn" type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h3 class="title">Contact Us</h3>
+                            <div class="form-group">
+                                <span class="input-icon"><i class="fa fa-user"></i></span>
+                                <input class="form-control" type="text" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <span class="input-icon"><i class="fa fa-envelope"></i></span>
+                                <input class="form-control" type="email" placeholder="Email Address">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="4" cols="120" placeholder="Message"></textarea>
+                            </div>
+                            <button class="btn signin">Send Message <i class="fa fa-long-arrow-alt-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2></h2>
+    </div>
+
+    <footer>
+        <p>STAVROS</p>
+        <p>123 Oak Street, Woodland Hills, CA-91364 <br> <a href="tel:123-456-7890">+1 (123) 456 7890</a>
+            <br><a href="mailto:stavros@stavros.com">email us</a></p>
+    </footer>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
